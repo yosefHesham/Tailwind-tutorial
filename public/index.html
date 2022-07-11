@@ -8,12 +8,16 @@
     <title>Document</title>
   </head>
   <body class="text-gray-600 font-serif">
-    <div>
-      <div>
+    <div class="grid md:grid-cols-3"> 
+      <div class="md:col-span-1">
         <nav>
           <section>
             <h1 class="font-extrabold uppercase p-4">
-              <a href="/">Food Ninja</a>
+              <a
+                href="/"
+                class="text-green-500 sm:text-yellow-600 lg:text-red-600 hover:text-gray-800"
+                >Food Ninja</a
+              >
             </h1>
           </section>
           <ul>
@@ -29,12 +33,11 @@
           </ul>
         </nav>
       </div>
-    </div>
 
-    <main class="px-16 py-16">
-      <section class="flex justify-end">
-        <a href="#" class="text-orange-400">Login </a>
-        <a href="#" class="text-orange-400 ml-2">Signup </a>
+    <main class="px-16 py-16 bg-gray-100 md:col-span-2">
+      <section class="flex justify-center md:justify-end">
+        <a href="#" class="text-orange-400 btn md:border-orange-400 md:border-2">Login </a>
+        <a href="#" class="text-orange-400 btn ml-2 md:border-orange-400 md:border-2">Signup </a>
       </section>
 
       <header>
@@ -45,12 +48,53 @@
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
           Latest Recipes
         </h4>
-        <div class="mt-8">
-          <article>
-            <img src="/curry.jpg" alt="" />
-            <div>
-              <span>5 Bean Chillie Stew</span>
-              <span>Recipe by mario</span>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <article class="card">
+            <img
+              src="/curry.jpg"
+              alt=""
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold">5 Bean Chillie Stew</span>
+              <span class="block text-gray-500 text-sm">Recipe by mario</span>
+            </div>
+            <div
+              class="badge"
+            >
+              <span>25 min</span>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="/stew.jpg"
+              alt=""
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold">5 Bean Chillie Stew</span>
+              <span class="block text-gray-500 text-sm">Recipe by mario</span>
+            </div>
+            <div
+              class="badge"
+            >
+              <span>25 min</span>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="/noodles.jpg"
+              alt=""
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold">5 Bean Chillie Stew</span>
+              <span class="block text-gray-500 text-sm">Recipe by mario</span>
+            </div>
+            <div
+              class="badge"
+            >
+              <span>25 min</span>
             </div>
           </article>
         </div>
@@ -62,10 +106,12 @@
           <!-- cards goes hre -->
         </section>
 
-        <section class="bg-gray-100 text-gray-500">
-          <article>Load more</article>
+        <section class="bg-blue-600 text-gray-200 btn">
+          <article >Load more</article>
         </section>
       </section>
     </main>
+  </div>
+
   </body>
 </html>
